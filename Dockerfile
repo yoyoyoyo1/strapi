@@ -2,7 +2,7 @@ FROM node:12.2.0-alpine
 
 WORKDIR /my-path
 
-COPY ./
+COPY . .
 
 ENV NODE_ENV production
 
