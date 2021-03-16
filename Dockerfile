@@ -1,17 +1,12 @@
-FROM strapi/base
+FROM node:12.2.0-alpine
 
 WORKDIR /my-path
 
-COPY ./package.json ./
-COPY ./yarn.lock ./
-
-RUN yarn install
-
-COPY . .
+COPY ./
 
 ENV NODE_ENV production
 
-RUN yarn build
+RUN yarn install && yarn build
 
 EXPOSE 1337
 
