@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hahas",
+  "info": {
+    "name": "haha"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sdfsdf": {
+      "type": "string"
+    }
+  }
+}
